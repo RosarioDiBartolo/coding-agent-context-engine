@@ -1,0 +1,15 @@
+test_empty_is_success_not_error (test_contracts.ContractTests.test_empty_is_success_not_error) ... ok
+test_fixture_and_deliberately_unresolved_import (test_contracts.ContractTests.test_fixture_and_deliberately_unresolved_import) ... ok
+test_invalid_dependency_payload (test_contracts.ContractTests.test_invalid_dependency_payload) ... ok
+test_invalid_timing (test_contracts.ContractTests.test_invalid_timing) ... ok
+test_live_requires_explicit_flag (test_contracts.ContractTests.test_live_requires_explicit_flag) ... ok
+test_paths_are_not_inferred_and_edges_are_deduplicated (test_contracts.ContractTests.test_paths_are_not_inferred_and_edges_are_deduplicated) ... ok
+test_probability_validation (test_contracts.ContractTests.test_probability_validation) ... ok
+test_symbol_locator_survives_line_move_but_snapshot_changes (test_contracts.ContractTests.test_symbol_locator_survives_line_move_but_snapshot_changes) ... ok
+test_timeout_and_http_error_are_distinct (test_contracts.SDKContractTests.test_timeout_and_http_error_are_distinct) ... ok
+test_typed_response_request_and_usage (test_contracts.SDKContractTests.test_typed_response_request_and_usage) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.285s
+
+OK

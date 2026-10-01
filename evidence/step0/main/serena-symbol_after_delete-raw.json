@@ -1,0 +1,15 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "[{\"name_path\": \"create_refresh_token\", \"kind\": \"Function\", \"relative_path\": \"maintenance.py\", \"body_location\": {\"start_line\": 1, \"end_line\": 1}}, {\"name_path\": \"create_refresh_token\", \"kind\": \"Function\", \"relative_path\": \"tests/test_session.py\", \"body_location\": {\"start_line\": 2, \"end_line\": 2}}, {\"name_path\": \"create_refresh_token\", \"kind\": \"Function\", \"relative_path\": \"demo/api/session.py\", \"body_location\": {\"start_line\": 0, \"end_line\": 0}}]",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "result": "[{\"name_path\": \"create_refresh_token\", \"kind\": \"Function\", \"relative_path\": \"maintenance.py\", \"body_location\": {\"start_line\": 1, \"end_line\": 1}}, {\"name_path\": \"create_refresh_token\", \"kind\": \"Function\", \"relative_path\": \"tests/test_session.py\", \"body_location\": {\"start_line\": 2, \"end_line\": 2}}, {\"name_path\": \"create_refresh_token\", \"kind\": \"Function\", \"relative_path\": \"demo/api/session.py\", \"body_location\": {\"start_line\": 0, \"end_line\": 0}}]"
+  },
+  "isError": false
+}

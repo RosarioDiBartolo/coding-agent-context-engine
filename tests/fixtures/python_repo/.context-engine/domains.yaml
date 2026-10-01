@@ -1,0 +1,10 @@
+schema_version: 1
+domains:
+  - id: domain:default/auth
+    description: Authentication and refresh tokens
+    aliases: [login, session, refresh]
+    files: [demo/auth/**, demo/api/**, tests/test_session.py]
+  - id: domain:default/storage
+    description: User storage
+    aliases: [users, persistence]
+    files: [demo/storage/**]

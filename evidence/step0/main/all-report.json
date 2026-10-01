@@ -1,0 +1,743 @@
+{
+  "schema_version": 1,
+  "python": "3.12.14",
+  "platform": "linux",
+  "live_jev_requested": true,
+  "results": [
+    {
+      "provider": "pydeps",
+      "operation": "package",
+      "status": "ok",
+      "version": "3.0.8",
+      "data": {
+        "command": [
+          "/workspace/scratch/92020fc8b5ea/.venv/bin/python",
+          "-m",
+          "pydeps",
+          "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo",
+          "--show-deps",
+          "--no-output",
+          "--noshow",
+          "--nodot",
+          "--no-config",
+          "--include-missing",
+          "--max-bacon",
+          "2"
+        ],
+        "nodes": [
+          {
+            "module": "__main__",
+            "path": null,
+            "resolution": "unresolved"
+          },
+          {
+            "module": "contextengine_missing_fixture_provider",
+            "path": null,
+            "resolution": "unresolved"
+          },
+          {
+            "module": "demo",
+            "path": "demo/__init__.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.api",
+            "path": "demo/api/__init__.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.api.session",
+            "path": "demo/api/session.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.auth",
+            "path": "demo/auth/__init__.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.auth.tokens",
+            "path": "demo/auth/tokens.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.plugins",
+            "path": "demo/plugins.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.storage",
+            "path": "demo/storage/__init__.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.storage.settings",
+            "path": "demo/storage/settings.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.storage.users",
+            "path": "demo/storage/users.py",
+            "resolution": "local"
+          },
+          {
+            "module": "importlib.import_module",
+            "path": null,
+            "resolution": "unresolved"
+          },
+          {
+            "module": "yaml",
+            "path": null,
+            "resolution": "external"
+          }
+        ],
+        "edges": [
+          {
+            "type": "imports",
+            "source": "__main__",
+            "target": "demo"
+          },
+          {
+            "type": "imports",
+            "source": "__main__",
+            "target": "demo.api"
+          },
+          {
+            "type": "imports",
+            "source": "__main__",
+            "target": "demo.api.session"
+          },
+          {
+            "type": "imports",
+            "source": "__main__",
+            "target": "demo.auth"
+          },
+          {
+            "type": "imports",
+            "source": "__main__",
+            "target": "demo.auth.tokens"
+          },
+          {
+            "type": "imports",
+            "source": "__main__",
+            "target": "demo.plugins"
+          },
+          {
+            "type": "imports",
+            "source": "__main__",
+            "target": "demo.storage"
+          },
+          {
+            "type": "imports",
+            "source": "__main__",
+            "target": "demo.storage.settings"
+          },
+          {
+            "type": "imports",
+            "source": "__main__",
+            "target": "demo.storage.users"
+          },
+          {
+            "type": "imports",
+            "source": "demo.api.session",
+            "target": "demo"
+          },
+          {
+            "type": "imports",
+            "source": "demo.api.session",
+            "target": "demo.auth"
+          },
+          {
+            "type": "imports",
+            "source": "demo.api.session",
+            "target": "demo.auth.tokens"
+          },
+          {
+            "type": "imports",
+            "source": "demo.api.session",
+            "target": "demo.storage"
+          },
+          {
+            "type": "imports",
+            "source": "demo.api.session",
+            "target": "demo.storage.users"
+          },
+          {
+            "type": "imports",
+            "source": "demo.auth.tokens",
+            "target": "demo"
+          },
+          {
+            "type": "imports",
+            "source": "demo.auth.tokens",
+            "target": "demo.storage"
+          },
+          {
+            "type": "imports",
+            "source": "demo.auth.tokens",
+            "target": "demo.storage.users"
+          },
+          {
+            "type": "imports",
+            "source": "demo.plugins",
+            "target": "contextengine_missing_fixture_provider"
+          },
+          {
+            "type": "imports",
+            "source": "demo.plugins",
+            "target": "importlib.import_module"
+          },
+          {
+            "type": "imports",
+            "source": "demo.storage.settings",
+            "target": "yaml"
+          }
+        ],
+        "limitations": [
+          "Dynamic targets may be absent",
+          "No call graph",
+          "Missing path does not prove external status"
+        ]
+      },
+      "error": null,
+      "elapsed_ms": 1867.300806000003,
+      "schema_version": 1
+    },
+    {
+      "provider": "pydeps",
+      "operation": "unmapped",
+      "status": "ok",
+      "version": "3.0.8",
+      "data": {
+        "command": [
+          "/workspace/scratch/92020fc8b5ea/.venv/bin/python",
+          "-m",
+          "pydeps",
+          "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/maintenance.py",
+          "--show-deps",
+          "--no-output",
+          "--noshow",
+          "--nodot",
+          "--no-config",
+          "--include-missing",
+          "--max-bacon",
+          "2"
+        ],
+        "nodes": [
+          {
+            "module": "demo",
+            "path": "demo/__init__.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.auth",
+            "path": "demo/auth/__init__.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.auth.tokens",
+            "path": "demo/auth/tokens.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.storage",
+            "path": "demo/storage/__init__.py",
+            "resolution": "local"
+          },
+          {
+            "module": "demo.storage.users",
+            "path": "demo/storage/users.py",
+            "resolution": "local"
+          },
+          {
+            "module": "maintenance.py",
+            "path": null,
+            "resolution": "unresolved"
+          }
+        ],
+        "edges": [
+          {
+            "type": "imports",
+            "source": "demo.auth.tokens",
+            "target": "demo"
+          },
+          {
+            "type": "imports",
+            "source": "demo.auth.tokens",
+            "target": "demo.storage"
+          },
+          {
+            "type": "imports",
+            "source": "demo.auth.tokens",
+            "target": "demo.storage.users"
+          },
+          {
+            "type": "imports",
+            "source": "maintenance.py",
+            "target": "demo"
+          },
+          {
+            "type": "imports",
+            "source": "maintenance.py",
+            "target": "demo.auth"
+          },
+          {
+            "type": "imports",
+            "source": "maintenance.py",
+            "target": "demo.auth.tokens"
+          },
+          {
+            "type": "imports",
+            "source": "maintenance.py",
+            "target": "demo.storage"
+          },
+          {
+            "type": "imports",
+            "source": "maintenance.py",
+            "target": "demo.storage.users"
+          }
+        ],
+        "limitations": [
+          "Dynamic targets may be absent",
+          "No call graph",
+          "Missing path does not prove external status"
+        ]
+      },
+      "error": null,
+      "elapsed_ms": 1994.7586180001053,
+      "schema_version": 1
+    },
+    {
+      "provider": "pydeps",
+      "operation": "invalid_target",
+      "status": "error",
+      "version": "3.0.8",
+      "data": null,
+      "error": {
+        "code": "process_error",
+        "details": {
+          "exit_code": 1,
+          "stderr": "No such file or directory: '/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/absent.py'\n"
+        }
+      },
+      "elapsed_ms": 108.8097580000067,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "startup",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": {
+        "tools": [
+          "activate_project",
+          "create_text_file",
+          "delete_memory",
+          "edit_memory",
+          "execute_shell_command",
+          "find_declaration",
+          "find_file",
+          "find_implementations",
+          "find_referencing_symbols",
+          "find_symbol",
+          "get_current_config",
+          "get_diagnostics_for_file",
+          "get_symbols_overview",
+          "initial_instructions",
+          "insert_after_symbol",
+          "insert_before_symbol",
+          "list_dir",
+          "list_memories",
+          "onboarding",
+          "read_file",
+          "read_memory",
+          "rename_memory",
+          "rename_symbol",
+          "replace_content",
+          "replace_in_files",
+          "replace_symbol_body",
+          "safe_delete_symbol",
+          "search_for_pattern",
+          "write_memory"
+        ]
+      },
+      "error": null,
+      "elapsed_ms": 3313.0955460001132,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "overview_cold",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": {
+        "Function": [
+          "sha256",
+          "create_refresh_token"
+        ],
+        "Class": [
+          "User",
+          "TokenService"
+        ]
+      },
+      "error": null,
+      "elapsed_ms": 669.4913999999699,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "overview_warm",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": {
+        "Function": [
+          "sha256",
+          "create_refresh_token"
+        ],
+        "Class": [
+          "User",
+          "TokenService"
+        ]
+      },
+      "error": null,
+      "elapsed_ms": 107.25908600034018,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "symbol_before",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": [
+        {
+          "name_path": "create_refresh_token",
+          "kind": "Function",
+          "relative_path": "demo/auth/tokens.py",
+          "body_location": {
+            "start_line": 5,
+            "end_line": 7
+          },
+          "body": "def create_refresh_token(user: User) -> str:\n    \"\"\"Deterministic fixture token, not production authentication.\"\"\"\n    return sha256(f\"refresh:{user.id}\".encode()).hexdigest()"
+        }
+      ],
+      "error": null,
+      "elapsed_ms": 106.48810599968783,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "references",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": {
+        "demo/api/session.py": {
+          "File": [
+            {
+              "name_path": "session",
+              "body_location": {
+                "start_line": 0,
+                "end_line": 7
+              },
+              "content_around_reference": "  >   0:from demo.auth.tokens import create_refresh_token\n...   1:from demo.storage.users import get_user"
+            }
+          ],
+          "Function": [
+            {
+              "name_path": "login",
+              "body_location": {
+                "start_line": 4,
+                "end_line": 5
+              },
+              "content_around_reference": "...   4:def login(user_id: int) -> dict[str, str]:\n  >   5:    return {\"refresh_token\": create_refresh_token(get_user(user_id))}\n...   6:"
+            }
+          ]
+        },
+        "demo/auth/tokens.py": {
+          "Method": [
+            {
+              "name_path": "TokenService/issue",
+              "body_location": {
+                "start_line": 11,
+                "end_line": 12
+              },
+              "content_around_reference": "...  11:    def issue(self, user: User) -> str:\n  >  12:        return create_refresh_token(user)\n...  13:"
+            }
+          ]
+        },
+        "maintenance.py": {
+          "File": [
+            {
+              "name_path": "maintenance",
+              "body_location": {
+                "start_line": 0,
+                "end_line": 8
+              },
+              "content_around_reference": "...   0:\"\"\"Deliberately unmapped, outside the domain catalogue.\"\"\"\n  >   1:from demo.auth.tokens import create_refresh_token\n...   2:from demo.storage.users import User"
+            }
+          ],
+          "Function": [
+            {
+              "name_path": "rotate_refresh_token",
+              "body_location": {
+                "start_line": 5,
+                "end_line": 6
+              },
+              "content_around_reference": "...   5:def rotate_refresh_token(user_id: int) -> str:\n  >   6:    return create_refresh_token(User(user_id, \"maintenance\"))\n...   7:"
+            }
+          ]
+        },
+        "tests/test_session.py": {
+          "File": [
+            {
+              "name_path": "test_session",
+              "body_location": {
+                "start_line": 0,
+                "end_line": 14
+              },
+              "content_around_reference": "...   1:from demo.api.session import login\n  >   2:from demo.auth.tokens import TokenService, create_refresh_token\n...   3:from demo.storage.users import User"
+            }
+          ],
+          "Method": [
+            {
+              "name_path": "SessionTests/test_login",
+              "body_location": {
+                "start_line": 7,
+                "end_line": 8
+              },
+              "content_around_reference": "...   7:    def test_login(self):\n  >   8:        self.assertEqual(login(7)[\"refresh_token\"], create_refresh_token(User(7, \"Ada\")))\n...   9:"
+            },
+            {
+              "name_path": "SessionTests/test_service",
+              "body_location": {
+                "start_line": 10,
+                "end_line": 12
+              },
+              "content_around_reference": "...  11:        user = User(8, \"Grace\")\n  >  12:        self.assertEqual(TokenService().issue(user), create_refresh_token(user))\n...  13:"
+            }
+          ]
+        }
+      },
+      "error": null,
+      "elapsed_ms": 2201.534803999948,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "definition",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": {
+        "name_path": "create_refresh_token",
+        "kind": "Function",
+        "relative_path": "demo/auth/tokens.py",
+        "body_location": {
+          "start_line": 5,
+          "end_line": 7
+        },
+        "body": "def create_refresh_token(user: User) -> str:\n    \"\"\"Deterministic fixture token, not production authentication.\"\"\"\n    return sha256(f\"refresh:{user.id}\".encode()).hexdigest()"
+      },
+      "error": null,
+      "elapsed_ms": 127.14882099999159,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "empty",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": [],
+      "error": null,
+      "elapsed_ms": 851.0990409999977,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "missing_file",
+      "status": "error",
+      "version": "1.7.0",
+      "data": null,
+      "error": {
+        "code": "tool_error",
+        "details": "Error executing tool get_symbols_overview: FileNotFoundError: File or directory absent.py does not exist in the project."
+      },
+      "elapsed_ms": 100.33678199988572,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "symbol_after_edit",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": [
+        {
+          "name_path": "create_refresh_token",
+          "kind": "Function",
+          "relative_path": "demo/auth/tokens.py",
+          "body_location": {
+            "start_line": 6,
+            "end_line": 8
+          },
+          "body": "def create_refresh_token(user: User) -> str:\n    \"\"\"Deterministic fixture token, not production authentication.\"\"\"\n    return sha256(f\"refresh-v2:{user.id}\".encode()).hexdigest()"
+        }
+      ],
+      "error": null,
+      "elapsed_ms": 169.28069599998707,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "edit_observed",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": {
+        "fresh": true,
+        "before": [
+          {
+            "name_path": "create_refresh_token",
+            "kind": "Function",
+            "relative_path": "demo/auth/tokens.py",
+            "body_location": {
+              "start_line": 5,
+              "end_line": 7
+            },
+            "body": "def create_refresh_token(user: User) -> str:\n    \"\"\"Deterministic fixture token, not production authentication.\"\"\"\n    return sha256(f\"refresh:{user.id}\".encode()).hexdigest()"
+          }
+        ],
+        "after": [
+          {
+            "name_path": "create_refresh_token",
+            "kind": "Function",
+            "relative_path": "demo/auth/tokens.py",
+            "body_location": {
+              "start_line": 6,
+              "end_line": 8
+            },
+            "body": "def create_refresh_token(user: User) -> str:\n    \"\"\"Deterministic fixture token, not production authentication.\"\"\"\n    return sha256(f\"refresh-v2:{user.id}\".encode()).hexdigest()"
+          }
+        ],
+        "snapshot_sha256": "f29dfac3d21cb2ba2cb4d0af3e00c799ac1eead47a2e59ec5a845918d066e8f8"
+      },
+      "error": null,
+      "elapsed_ms": null,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "symbol_after_delete",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": [
+        {
+          "name_path": "create_refresh_token",
+          "kind": "Function",
+          "relative_path": "maintenance.py",
+          "body_location": {
+            "start_line": 1,
+            "end_line": 1
+          }
+        },
+        {
+          "name_path": "create_refresh_token",
+          "kind": "Function",
+          "relative_path": "tests/test_session.py",
+          "body_location": {
+            "start_line": 2,
+            "end_line": 2
+          }
+        },
+        {
+          "name_path": "create_refresh_token",
+          "kind": "Function",
+          "relative_path": "demo/api/session.py",
+          "body_location": {
+            "start_line": 0,
+            "end_line": 0
+          }
+        }
+      ],
+      "error": null,
+      "elapsed_ms": 121.51102299958438,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "delete_observed",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": {
+        "deleted_definition_absent": true,
+        "remaining_search_candidates": [
+          {
+            "name_path": "create_refresh_token",
+            "kind": "Function",
+            "relative_path": "maintenance.py",
+            "body_location": {
+              "start_line": 1,
+              "end_line": 1
+            }
+          },
+          {
+            "name_path": "create_refresh_token",
+            "kind": "Function",
+            "relative_path": "tests/test_session.py",
+            "body_location": {
+              "start_line": 2,
+              "end_line": 2
+            }
+          },
+          {
+            "name_path": "create_refresh_token",
+            "kind": "Function",
+            "relative_path": "demo/api/session.py",
+            "body_location": {
+              "start_line": 0,
+              "end_line": 0
+            }
+          }
+        ]
+      },
+      "error": null,
+      "elapsed_ms": null,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "deleted_file",
+      "status": "error",
+      "version": "1.7.0",
+      "data": null,
+      "error": {
+        "code": "tool_error",
+        "details": "Error executing tool get_symbols_overview: FileNotFoundError: File or directory demo/auth/tokens.py does not exist in the project."
+      },
+      "elapsed_ms": 103.1791349996638,
+      "schema_version": 1
+    },
+    {
+      "provider": "serena",
+      "operation": "shutdown",
+      "status": "ok",
+      "version": "1.7.0",
+      "data": {
+        "tracked_children": 3,
+        "remaining_pids": []
+      },
+      "error": null,
+      "elapsed_ms": null,
+      "schema_version": 1
+    },
+    {
+      "provider": "jev",
+      "operation": "live_noul",
+      "status": "blocked",
+      "version": "0.7.2",
+      "data": null,
+      "error": {
+        "code": "credentials_missing",
+        "details": null
+      },
+      "elapsed_ms": null,
+      "schema_version": 1
+    }
+  ]
+}

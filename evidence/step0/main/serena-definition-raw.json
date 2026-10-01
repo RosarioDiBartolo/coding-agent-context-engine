@@ -1,0 +1,15 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"name_path\": \"create_refresh_token\", \"kind\": \"Function\", \"relative_path\": \"demo/auth/tokens.py\", \"body_location\": {\"start_line\": 5, \"end_line\": 7}, \"body\": \"def create_refresh_token(user: User) -> str:\\n    \\\"\\\"\\\"Deterministic fixture token, not production authentication.\\\"\\\"\\\"\\n    return sha256(f\\\"refresh:{user.id}\\\".encode()).hexdigest()\"}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "result": "{\"name_path\": \"create_refresh_token\", \"kind\": \"Function\", \"relative_path\": \"demo/auth/tokens.py\", \"body_location\": {\"start_line\": 5, \"end_line\": 7}, \"body\": \"def create_refresh_token(user: User) -> str:\\n    \\\"\\\"\\\"Deterministic fixture token, not production authentication.\\\"\\\"\\\"\\n    return sha256(f\\\"refresh:{user.id}\\\".encode()).hexdigest()\"}"
+  },
+  "isError": false
+}

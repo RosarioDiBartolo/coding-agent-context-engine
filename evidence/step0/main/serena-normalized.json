@@ -1,0 +1,62 @@
+{
+  "before": [
+    {
+      "provider": "serena",
+      "locator": {
+        "path": "demo/auth/tokens.py",
+        "name_path": "create_refresh_token"
+      },
+      "provider_id": null,
+      "kind": "Function",
+      "range": {
+        "start_line": 5,
+        "end_line": 7,
+        "base": 0,
+        "end_inclusive": true
+      },
+      "file_sha256": "dc9d75b8ec48d6164c8c3383d9416cd43486c053c2ebbbac45d041cab6682685",
+      "acquisition": "find_symbol",
+      "body": "def create_refresh_token(user: User) -> str:\n    \"\"\"Deterministic fixture token, not production authentication.\"\"\"\n    return sha256(f\"refresh:{user.id}\".encode()).hexdigest()"
+    }
+  ],
+  "after": [
+    {
+      "provider": "serena",
+      "locator": {
+        "path": "demo/auth/tokens.py",
+        "name_path": "create_refresh_token"
+      },
+      "provider_id": null,
+      "kind": "Function",
+      "range": {
+        "start_line": 6,
+        "end_line": 8,
+        "base": 0,
+        "end_inclusive": true
+      },
+      "file_sha256": "f29dfac3d21cb2ba2cb4d0af3e00c799ac1eead47a2e59ec5a845918d066e8f8",
+      "acquisition": "find_symbol",
+      "body": "def create_refresh_token(user: User) -> str:\n    \"\"\"Deterministic fixture token, not production authentication.\"\"\"\n    return sha256(f\"refresh-v2:{user.id}\".encode()).hexdigest()"
+    }
+  ],
+  "definition": [
+    {
+      "provider": "serena",
+      "locator": {
+        "path": "demo/auth/tokens.py",
+        "name_path": "create_refresh_token"
+      },
+      "provider_id": null,
+      "kind": "Function",
+      "range": {
+        "start_line": 5,
+        "end_line": 7,
+        "base": 0,
+        "end_inclusive": true
+      },
+      "file_sha256": "dc9d75b8ec48d6164c8c3383d9416cd43486c053c2ebbbac45d041cab6682685",
+      "acquisition": "find_declaration",
+      "body": "def create_refresh_token(user: User) -> str:\n    \"\"\"Deterministic fixture token, not production authentication.\"\"\"\n    return sha256(f\"refresh:{user.id}\".encode()).hexdigest()"
+    }
+  ]
+}

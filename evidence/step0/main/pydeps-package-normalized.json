@@ -1,0 +1,176 @@
+{
+  "nodes": [
+    {
+      "module": "__main__",
+      "path": null,
+      "resolution": "unresolved"
+    },
+    {
+      "module": "contextengine_missing_fixture_provider",
+      "path": null,
+      "resolution": "unresolved"
+    },
+    {
+      "module": "demo",
+      "path": "demo/__init__.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.api",
+      "path": "demo/api/__init__.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.api.session",
+      "path": "demo/api/session.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.auth",
+      "path": "demo/auth/__init__.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.auth.tokens",
+      "path": "demo/auth/tokens.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.plugins",
+      "path": "demo/plugins.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.storage",
+      "path": "demo/storage/__init__.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.storage.settings",
+      "path": "demo/storage/settings.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.storage.users",
+      "path": "demo/storage/users.py",
+      "resolution": "local"
+    },
+    {
+      "module": "importlib.import_module",
+      "path": null,
+      "resolution": "unresolved"
+    },
+    {
+      "module": "yaml",
+      "path": null,
+      "resolution": "external"
+    }
+  ],
+  "edges": [
+    {
+      "type": "imports",
+      "source": "__main__",
+      "target": "demo"
+    },
+    {
+      "type": "imports",
+      "source": "__main__",
+      "target": "demo.api"
+    },
+    {
+      "type": "imports",
+      "source": "__main__",
+      "target": "demo.api.session"
+    },
+    {
+      "type": "imports",
+      "source": "__main__",
+      "target": "demo.auth"
+    },
+    {
+      "type": "imports",
+      "source": "__main__",
+      "target": "demo.auth.tokens"
+    },
+    {
+      "type": "imports",
+      "source": "__main__",
+      "target": "demo.plugins"
+    },
+    {
+      "type": "imports",
+      "source": "__main__",
+      "target": "demo.storage"
+    },
+    {
+      "type": "imports",
+      "source": "__main__",
+      "target": "demo.storage.settings"
+    },
+    {
+      "type": "imports",
+      "source": "__main__",
+      "target": "demo.storage.users"
+    },
+    {
+      "type": "imports",
+      "source": "demo.api.session",
+      "target": "demo"
+    },
+    {
+      "type": "imports",
+      "source": "demo.api.session",
+      "target": "demo.auth"
+    },
+    {
+      "type": "imports",
+      "source": "demo.api.session",
+      "target": "demo.auth.tokens"
+    },
+    {
+      "type": "imports",
+      "source": "demo.api.session",
+      "target": "demo.storage"
+    },
+    {
+      "type": "imports",
+      "source": "demo.api.session",
+      "target": "demo.storage.users"
+    },
+    {
+      "type": "imports",
+      "source": "demo.auth.tokens",
+      "target": "demo"
+    },
+    {
+      "type": "imports",
+      "source": "demo.auth.tokens",
+      "target": "demo.storage"
+    },
+    {
+      "type": "imports",
+      "source": "demo.auth.tokens",
+      "target": "demo.storage.users"
+    },
+    {
+      "type": "imports",
+      "source": "demo.plugins",
+      "target": "contextengine_missing_fixture_provider"
+    },
+    {
+      "type": "imports",
+      "source": "demo.plugins",
+      "target": "importlib.import_module"
+    },
+    {
+      "type": "imports",
+      "source": "demo.storage.settings",
+      "target": "yaml"
+    }
+  ],
+  "limitations": [
+    "Dynamic targets may be absent",
+    "No call graph",
+    "Missing path does not prove external status"
+  ]
+}

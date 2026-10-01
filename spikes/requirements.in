@@ -1,0 +1,6 @@
+# Exact direct versions verified by the cloud probes.
+pydeps==3.0.8
+serena-agent==1.7.0
+mcp==1.28.1
+jedi-language-server==0.47.0
+typesafe-sdk==0.7.2

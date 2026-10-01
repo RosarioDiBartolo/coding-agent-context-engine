@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "local_provider_checks": {
+    "pydeps.package": true,
+    "pydeps.unmapped": true,
+    "serena.startup": true,
+    "serena.overview_cold": true,
+    "serena.overview_warm": true,
+    "serena.symbol_before": true,
+    "serena.references": true,
+    "serena.definition": true,
+    "serena.empty": true,
+    "serena.symbol_after_edit": true,
+    "serena.edit_observed": true,
+    "serena.symbol_after_delete": true,
+    "serena.delete_observed": true,
+    "serena.shutdown": true,
+    "pydeps.invalid_target_is_error": true,
+    "serena.missing_file_is_error": true,
+    "serena.deleted_file_is_error": true,
+    "empty_is_empty": true,
+    "edit_is_fresh": true,
+    "delete_is_fresh": true,
+    "no_children_left": true,
+    "references_include_unmapped_and_tests": true,
+    "definition_is_target": true
+  },
+  "local_providers_passed": true,
+  "jev_live_verified": false,
+  "step0_status": "partial",
+  "step1_deterministic_prerequisites": true,
+  "jev_blocker": {
+    "code": "credentials_missing",
+    "details": null
+  }
+}

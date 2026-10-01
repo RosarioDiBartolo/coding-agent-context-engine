@@ -1,0 +1,15 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"Function\": [\"sha256\", \"create_refresh_token\"], \"Class\": [\"User\", \"TokenService\"]}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "result": "{\"Function\": [\"sha256\", \"create_refresh_token\"], \"Class\": [\"User\", \"TokenService\"]}"
+  },
+  "isError": false
+}

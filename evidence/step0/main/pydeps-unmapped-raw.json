@@ -1,0 +1,62 @@
+{
+  "demo": {
+    "bacon": 1,
+    "imported_by": [
+      "demo.auth.tokens",
+      "maintenance.py"
+    ],
+    "name": "demo",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/__init__.py"
+  },
+  "demo.auth": {
+    "bacon": 1,
+    "imported_by": [
+      "maintenance.py"
+    ],
+    "name": "demo.auth",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/auth/__init__.py"
+  },
+  "demo.auth.tokens": {
+    "bacon": 1,
+    "imported_by": [
+      "maintenance.py"
+    ],
+    "imports": [
+      "demo",
+      "demo.storage",
+      "demo.storage.users"
+    ],
+    "name": "demo.auth.tokens",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/auth/tokens.py"
+  },
+  "demo.storage": {
+    "bacon": 1,
+    "imported_by": [
+      "demo.auth.tokens",
+      "maintenance.py"
+    ],
+    "name": "demo.storage",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/storage/__init__.py"
+  },
+  "demo.storage.users": {
+    "bacon": 1,
+    "imported_by": [
+      "demo.auth.tokens",
+      "maintenance.py"
+    ],
+    "name": "demo.storage.users",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/storage/users.py"
+  },
+  "maintenance.py": {
+    "bacon": 0,
+    "imports": [
+      "demo",
+      "demo.auth",
+      "demo.auth.tokens",
+      "demo.storage",
+      "demo.storage.users"
+    ],
+    "name": "maintenance.py",
+    "path": null
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "__main__": {
+    "bacon": 0,
+    "imports": [
+      "demo",
+      "demo.api",
+      "demo.api.session",
+      "demo.auth",
+      "demo.auth.tokens",
+      "demo.plugins",
+      "demo.storage",
+      "demo.storage.settings",
+      "demo.storage.users"
+    ],
+    "name": "__main__",
+    "path": null
+  },
+  "contextengine_missing_fixture_provider": {
+    "bacon": 2,
+    "imported_by": [
+      "demo.plugins"
+    ],
+    "name": "contextengine_missing_fixture_provider",
+    "path": null
+  },
+  "demo": {
+    "bacon": 1,
+    "imported_by": [
+      "__main__",
+      "demo.api.session",
+      "demo.auth.tokens"
+    ],
+    "name": "demo",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/__init__.py"
+  },
+  "demo.api": {
+    "bacon": 1,
+    "imported_by": [
+      "__main__"
+    ],
+    "name": "demo.api",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/api/__init__.py"
+  },
+  "demo.api.session": {
+    "bacon": 1,
+    "imported_by": [
+      "__main__"
+    ],
+    "imports": [
+      "demo",
+      "demo.auth",
+      "demo.auth.tokens",
+      "demo.storage",
+      "demo.storage.users"
+    ],
+    "name": "demo.api.session",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/api/session.py"
+  },
+  "demo.auth": {
+    "bacon": 1,
+    "imported_by": [
+      "__main__",
+      "demo.api.session"
+    ],
+    "name": "demo.auth",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/auth/__init__.py"
+  },
+  "demo.auth.tokens": {
+    "bacon": 1,
+    "imported_by": [
+      "__main__",
+      "demo.api.session"
+    ],
+    "imports": [
+      "demo",
+      "demo.storage",
+      "demo.storage.users"
+    ],
+    "name": "demo.auth.tokens",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/auth/tokens.py"
+  },
+  "demo.plugins": {
+    "bacon": 1,
+    "imported_by": [
+      "__main__"
+    ],
+    "imports": [
+      "contextengine_missing_fixture_provider",
+      "importlib.import_module"
+    ],
+    "name": "demo.plugins",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/plugins.py"
+  },
+  "demo.storage": {
+    "bacon": 1,
+    "imported_by": [
+      "__main__",
+      "demo.api.session",
+      "demo.auth.tokens"
+    ],
+    "name": "demo.storage",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/storage/__init__.py"
+  },
+  "demo.storage.settings": {
+    "bacon": 1,
+    "imported_by": [
+      "__main__"
+    ],
+    "imports": [
+      "yaml"
+    ],
+    "name": "demo.storage.settings",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/storage/settings.py"
+  },
+  "demo.storage.users": {
+    "bacon": 1,
+    "imported_by": [
+      "__main__",
+      "demo.api.session",
+      "demo.auth.tokens"
+    ],
+    "name": "demo.storage.users",
+    "path": "/workspace/scratch/92020fc8b5ea/tests/fixtures/python_repo/demo/storage/users.py"
+  },
+  "importlib.import_module": {
+    "bacon": 2,
+    "imported_by": [
+      "demo.plugins"
+    ],
+    "name": "importlib.import_module",
+    "path": null
+  },
+  "yaml": {
+    "bacon": 2,
+    "imported_by": [
+      "demo.storage.settings"
+    ],
+    "name": "yaml",
+    "path": "/workspace/scratch/92020fc8b5ea/.tools/clean-venv/lib/python3.12/site-packages/yaml/__init__.py"
+  }
+}

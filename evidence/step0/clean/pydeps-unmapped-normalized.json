@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "module": "demo",
+      "path": "demo/__init__.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.auth",
+      "path": "demo/auth/__init__.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.auth.tokens",
+      "path": "demo/auth/tokens.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.storage",
+      "path": "demo/storage/__init__.py",
+      "resolution": "local"
+    },
+    {
+      "module": "demo.storage.users",
+      "path": "demo/storage/users.py",
+      "resolution": "local"
+    },
+    {
+      "module": "maintenance.py",
+      "path": null,
+      "resolution": "unresolved"
+    }
+  ],
+  "edges": [
+    {
+      "type": "imports",
+      "source": "demo.auth.tokens",
+      "target": "demo"
+    },
+    {
+      "type": "imports",
+      "source": "demo.auth.tokens",
+      "target": "demo.storage"
+    },
+    {
+      "type": "imports",
+      "source": "demo.auth.tokens",
+      "target": "demo.storage.users"
+    },
+    {
+      "type": "imports",
+      "source": "maintenance.py",
+      "target": "demo"
+    },
+    {
+      "type": "imports",
+      "source": "maintenance.py",
+      "target": "demo.auth"
+    },
+    {
+      "type": "imports",
+      "source": "maintenance.py",
+      "target": "demo.auth.tokens"
+    },
+    {
+      "type": "imports",
+      "source": "maintenance.py",
+      "target": "demo.storage"
+    },
+    {
+      "type": "imports",
+      "source": "maintenance.py",
+      "target": "demo.storage.users"
+    }
+  ],
+  "limitations": [
+    "Dynamic targets may be absent",
+    "No call graph",
+    "Missing path does not prove external status"
+  ]
+}

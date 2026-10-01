@@ -1,0 +1,12 @@
+{
+  "required_imports": [
+    ["demo.api.session", "demo.auth.tokens"],
+    ["demo.api.session", "demo.storage.users"],
+    ["demo.auth.tokens", "demo.storage.users"]
+  ],
+  "missing_import": "contextengine_missing_fixture_provider",
+  "dynamic_import_source": "demo/plugins.py",
+  "symbol": {"path": "demo/auth/tokens.py", "name_path": "create_refresh_token"},
+  "reference_paths": ["demo/api/session.py", "demo/auth/tokens.py", "tests/test_session.py", "maintenance.py"],
+  "unmapped_paths": ["maintenance.py", "demo/plugins.py"]
+}
